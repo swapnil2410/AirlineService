@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <title> AirLine</title>
+
+    <link rel="stylesheet" th:href="@{/css/demo.css}" />
+
+
+
+</head>
+<body>
+
+<h1 th:text ="${theData}"/>
+
+<img src="" th:src="@{css/image/img1.jpg}" class="center"/>
+
+
+<input type="text"  th:value="${startJourney}">
+<br><br><br>
+<input type="text"  th:value="${endJourney}">
+<br><br><br>
+<input type="date"  th:value="${travelDate}">
+<br><br><br>
+<input type="submit" value="Search"/>
+<br><br><br>
+<div id="login-field">
+<form th:action="@{/login.html}" method="post">
+     <label for="username" > User Login </label>:
+    <input type="text" id="username" name="username" autofocus="autofocus" /> <br />
+    <br><br>
+    <label for="username1">Admin Login</label>:
+    <input type="text" id="username1" name="username1" autofocus="autofocus" /> <br />
+</form>
+</div>
+
+
+</body>
+</html>
